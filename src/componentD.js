@@ -22,7 +22,7 @@ export default class ComponentD extends React.PureComponent {
     }, 1000);
   }
 
-  // rendering logic handles by Blog (if statements) but the actual rendering job is handled by nested components
+  // rendering logic handles by parent component (if statements) but the actual rendering job is handled by nested components
   render() {
     if (this.state.isLoading) {
       return <LoadingComponent />;
